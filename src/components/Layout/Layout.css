@@ -1,0 +1,11 @@
+.Toolbar{
+    padding: 2%;
+    text-align: center;
+    border: 1px solid #888;
+}
+
+.Content {
+    padding: 50px;
+    margin-top: 16px;
+}
+
