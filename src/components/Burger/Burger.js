@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './Burger.css';
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
 
+
 const burger = (props) => {
     let transformedIngredients = Object.keys(props.ingredients)
         .map(igKey =>{
@@ -15,11 +16,11 @@ const burger = (props) => {
         }, []);
 
     
-        {
-            if(transformedIngredients.length === 0){
-                transformedIngredients = <p> Please start adding ingredients! </p>
-            }
+        
+        if(transformedIngredients.length === 0){
+            transformedIngredients = <p> Please start adding ingredients! </p>
         }
+        
 
 
     return (
